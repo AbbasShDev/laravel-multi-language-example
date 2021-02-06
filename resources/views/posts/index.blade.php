@@ -5,26 +5,28 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-title">Posts</div>
+                    <div class="card-header border-bottom-0 ">Posts</div>
 
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($posts as $post)
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered order-left-0 border-right-0 m-0">
+                                <thead class="">
                                 <tr>
-                                    <td>{{ $post->id }}</td>
-                                    <td>{{ $post->title }}</td>
+                                    <th class="border-bottom-0">ID</th>
+                                    <th class="border-bottom-0">Title</th>
                                 </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                                </thead>
+                                <tbody>
+                                @foreach($posts as $post)
+                                    <tr>
+                                        <td class="text-center">{{ $post->id }}</td>
+                                        <td>{{ $post->title }}</td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+
                 </div>
             </div>
         </div>

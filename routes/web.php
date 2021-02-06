@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', app()->getLocale());
 
-Auth::routes();
+Route::group(['prefix'=> '{language}'] , function (){
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('home');
 
-Route::middleware(['localized'])->prefix(app()->getLocale())->group(function (){
+    Auth::routes();
 
     Route::resource('/posts', PostController::class);
 
