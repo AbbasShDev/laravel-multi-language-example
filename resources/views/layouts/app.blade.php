@@ -50,7 +50,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 @foreach(config('locales.languages') as $key => $value)
-                                    <a href="{{ route(Route::currentRouteName(), $key) }}" class="dropdown-item">{{ $value['name'] }}</a>
+                                    <a href="{{ route(Route::currentRouteName(), ['language'=>$key, 'post' => $post]) }}" class="dropdown-item">{{ $value['name'] }}</a>
                                 @endforeach
                             </div>
                         </li>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class PostController extends Controller {
 
@@ -35,15 +36,11 @@ class PostController extends Controller {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Post $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Post $post)
+
+    public function show($lang, $slug)
     {
-        //
+        $post = Post::where("slug->$lang", $slug)->first();
+       return view('posts.show', compact('post'));
     }
 
     /**

@@ -20,7 +20,7 @@
                                 @foreach($posts as $post)
                                     <tr>
                                         <td class="text-center">{{ $post->id }}</td>
-                                        <td>{{ $post->title }}</td>
+                                        <td><a href="{{ route('posts.show', ['post' => $post, 'language' => app()->getLocale()]) }}">{{ $post->title }}</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>
