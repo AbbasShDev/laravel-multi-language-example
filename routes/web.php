@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', app()->getLocale());
 
-Route::group(['prefix'=> '{language}'] , function (){
+Route::get('/change-language/{locale}',     [LocaleController::class, 'switch'])->name('change.language');
+
+Route::middleware(['localized'])->prefix(app()->getLocale())->group( function (){
 
     Route::get('/', function () {
         return view('welcome');

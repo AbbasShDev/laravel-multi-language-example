@@ -23,11 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d3aa95-b29c-4555-aef9-0bdc44dfab87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +193,9 @@
       <workItem from="1612369492548" duration="6391000" />
       <workItem from="1612639766172" duration="178000" />
       <workItem from="1612640022330" duration="20000" />
-      <workItem from="1612713322374" duration="3398000" />
+      <workItem from="1612713322374" duration="3471000" />
+      <workItem from="1612792234470" duration="3730000" />
+      <workItem from="1612802588685" duration="4584000" />
     </task>
     <servers />
   </component>
@@ -204,20 +212,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser" timestamp="1612371607015">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
     <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser/0.25.1280.723@0.25.1280.723" timestamp="1612371607015" />
+    <state x="345" y="102" key="NewPhpClassDialog" timestamp="1612793260117">
+      <screen x="0" y="25" width="1280" height="723" />
+    </state>
+    <state x="345" y="102" key="NewPhpClassDialog/0.25.1280.723@0.25.1280.723" timestamp="1612793260117" />
     <state x="171" y="36" key="SettingsEditor" timestamp="1612639982313">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
     <state x="171" y="36" key="SettingsEditor/0.25.1280.723@0.25.1280.723" timestamp="1612639982313" />
-    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1612377206543">
+    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1612805767659">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
-    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.25.1280.723@0.25.1280.723" timestamp="1612377206543" />
+    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.25.1280.723@0.25.1280.723" timestamp="1612805767659" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

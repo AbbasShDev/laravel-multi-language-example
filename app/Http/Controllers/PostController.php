@@ -37,9 +37,9 @@ class PostController extends Controller {
     }
 
 
-    public function show($lang, $slug)
+    public function show(Post $post)
     {
-        $post = Post::where("slug->$lang", $slug)->first();
+
        return view('posts.show', compact('post'));
     }
 
