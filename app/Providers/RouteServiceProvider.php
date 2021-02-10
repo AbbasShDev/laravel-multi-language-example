@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
-class RouteServiceProvider extends ServiceProvider
-{
+class RouteServiceProvider extends ServiceProvider {
+
     /**
      * The path to the "home" route for your application.
      *
@@ -36,7 +36,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         $locale = app()->getLocale();
+
         $this->configureRateLimiting();
 
         $this->routes(function () use ($locale) {
@@ -52,6 +54,7 @@ class RouteServiceProvider extends ServiceProvider
             Route::bind('post', function ($slug) use ($locale) {
                 return $this->resolveModel(Post::class, $slug, $locale);
             });
+
         });
 
     }
@@ -70,23 +73,18 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function resolveModel($modelClass, $slug, $locale)
     {
-        $model = $modelClass::where('slug->'. $locale, $slug)->first();
-
+        $model = $modelClass::where('slug->' . $locale, $slug)->first();
         if (is_null($model)) {
-
-            foreach (config('locales.languages') as $key => $val)
-            {
-                $modelInLocale = $modelClass::where('slug->'. $key, $slug)->first();
+            foreach (config('locales.languages') as $key => $val) {
+                $modelInLocale = $modelClass::where('slug->' . $key, $slug)->first();
                 if ($modelInLocale) {
                     $newRoute = str_replace($slug, $modelInLocale->slug, urldecode(request()->fullUrl()));
                     return redirect()->to($newRoute)->send();
                 }
             }
-
             abort(404);
         }
-
         return $model;
-
     }
+
 }
