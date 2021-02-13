@@ -18,15 +18,7 @@
 
     <!-- Styles -->
     @if(config('locales.languages')[app()->getLocale()]['dir'] == 'rtl')
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.6.0-1/css/bootstrap-rtl.min.css" integrity="sha512-+1C9xBCl0azgGjU6bIsATfB4XOQ0MSFduPs388NiyzwYt4nfelS72KSPSFZT338FjP7F3mMme2re8+gUJe2HZQ==" crossorigin="anonymous" />
-        <style>
-            a {
-                float: right !important;
-            }
-            .card-header {
-                text-align: right !important;
-            }
-        </style>
+        <link href="{{ asset('css/bootstrap-rtl.css') }}" rel="stylesheet">
     @else
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @endif
