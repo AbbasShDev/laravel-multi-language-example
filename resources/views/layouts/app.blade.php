@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ __("Laravel") }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -43,18 +43,6 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ config('locales.languages')[app()->getLocale()]['name'] }} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                @foreach(config('locales.languages') as $key => $value)
-                                    <a href="{{ route('change.language', $key ) }}" class="dropdown-item">{{ $value['name'] }}</a>
-                                @endforeach
-                            </div>
-                        </li>
 
                         <!-- Authentication Links -->
                         @guest
@@ -88,6 +76,19 @@
                                 </div>
                             </li>
                         @endguest
+
+                        <!-- Change lang -->
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ __('posts.'.config('locales.languages')[app()->getLocale()]['name']) }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                @foreach(config('locales.languages') as $key => $value)
+                                    <a href="{{ route('change.language', $key ) }}" class="dropdown-item">{{ __('posts.'. $value['name']) }}</a>
+                                @endforeach
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

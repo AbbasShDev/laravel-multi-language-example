@@ -13,22 +13,25 @@ class LocaleController extends Controller
 {
     public function switch($local) {
 
+        try {
+            if (array_key_exists($local, config('locales.languages'))) {
+                App::setLocale($local);
+                Lang::setLocale($local);
+                setlocale(LC_TIME, config('locales.languages')[$local]['unicode']);
+                Carbon::setLocale($local);
+                Session::put('locale', $local);
 
-        if (array_key_exists($local, config('locales.languages'))) {
-            App::setLocale($local);
-            Lang::setLocale($local);
-            setlocale(LC_TIME, config('locales.languages')[$local]['unicode']);
-            Carbon::setLocale($local);
-            Session::put('locale', $local);
+                $segments = request()->create(url()->previous())->segments();
 
-            $segments = request()->create(url()->previous())->segments();
-
-            if (isset($segments[1])){
-                $this->resolveModel(Post::class, $segments[1], $local);
+                if (isset($segments[1])){
+                    $this->resolveModel(Post::class, $segments[1], $local);
+                }
             }
-        }
 
-        return redirect()->back();
+            return redirect()->back();
+        } catch (\Exception $exception){
+            return redirect()->back();
+        }
 //        $segments[0] = $local;
 //
 //        $redirectUrl = implode('/', $segments);
