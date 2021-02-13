@@ -182,5 +182,11 @@ return [
         'title'                 => 'títol',
         'username'              => 'usuari',
         'year'                  => 'any',
+        'title.en'              => 'título (Inglesa)',
+        'body.en'               => 'cuerpo (Inglesa)',
+        'title.ar'              => 'título (Arábica)',
+        'body.ar'               => 'cuerpo (Arábica)',
+        'title.ca'              => 'título (Española)',
+        'body.ca'               => 'cuerpo (Arábica)',
     ],
 ];

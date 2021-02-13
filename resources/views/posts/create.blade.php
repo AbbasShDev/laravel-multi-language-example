@@ -9,6 +9,16 @@
 
                     <div class="card-body">
 
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul class="m-0">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         <form action="{{ route('posts.store') }}" method="POST">
                             @csrf
 
@@ -23,19 +33,13 @@
                                 @foreach(config('locales.languages') as $key => $val)
                                     <div class="tab-pane fade {{ $loop->index == 0 ? 'show active' : '' }}" id="{{ $key }}" role="tabpanel" aria-labelledby="{{ $key }}-tab">
                                         <div class="form-group">
-                                            <label for="title.{{$key}}">{{ __('posts.title') }} ({{ $key }})</label>
-                                            <input type="text" name="title[{{ $key }}]" id="title.{{$key}}"  class="form-control" value="{{ old('title'.$key) }}">
-                                            @error('title'.$key)
-                                            <span>{{ $message }}</span>
-                                            @enderror
+                                            <label for="title_{{$key}}">{{ __('posts.title') }} ({{ $key }})</label>
+                                            <input type="text" name="title[{{ $key }}]" id="title_{{$key}}"  class="form-control" value="{{ old('title_'.$key) }}">
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="body.{{$key}}">{{ __('posts.body') }} ({{ $key }})</label>
-                                            <textarea name="body[{{ $key }}]" id="body.{{ $key }}" class="form-control" >{{ old('body'.$key) }}</textarea>
-                                            @error('title'.$key)
-                                            <span>{{ $message }}</span>
-                                            @enderror
+                                            <label for="body_{{$key}}">{{ __('posts.body') }} ({{ $key }})</label>
+                                            <textarea name="body[{{ $key }}]" id="body_{{ $key }}" class="form-control" >{{ old('body_'.$key) }}</textarea>
                                         </div>
                                     </div>
                                 @endforeach

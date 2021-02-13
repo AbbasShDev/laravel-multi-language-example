@@ -10,7 +10,7 @@ class PostController extends Controller {
 
     public function index()
     {
-        $posts = Post::latest()->get();
+        $posts = Post::orderBy('id', 'DESC')->get();
 
         return view('posts.index', compact('posts'));
     }
@@ -20,15 +20,25 @@ class PostController extends Controller {
         return  view('posts.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $attrRoles = [];
+
+        foreach (config('locales.languages') as $key => $val){
+            $attrRoles['title.'.$key] = 'required';
+            $attrRoles['body.'.$key] = 'required';
+        }
+
+
+        $attributes = $request->validate($attrRoles);
+
+        $data['title'] = $request->title;
+        $data['body'] = $request->body;
+
+        $post = Post::create($data);
+
+        return redirect()->to(route('posts.show', $post));
+
     }
 
 
