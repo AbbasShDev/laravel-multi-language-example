@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Session;
@@ -53,6 +52,10 @@ class LocaleController extends Controller
                 }
             }
             abort(404);
+        }
+
+        if ($slug == $model->slug){
+            return redirect()->back();
         }
         return $model;
     }

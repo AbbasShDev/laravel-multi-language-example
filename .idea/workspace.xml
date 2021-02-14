@@ -23,13 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d3aa95-b29c-4555-aef9-0bdc44dfab87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/multi-lang-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/multi-lang-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LocaleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LocaleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ca/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ca/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sluggable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,9 +155,8 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-translatable" />
-      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
-      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
       <path value="$PROJECT_DIR$/vendor/nicolaslopezj/searchable" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-sluggable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nyk01keC5nZkpVo9G0B5zWgBZc" />
@@ -202,7 +203,7 @@
       <workItem from="1612990126582" duration="1446000" />
       <workItem from="1613174575144" duration="7462000" />
       <workItem from="1613252730840" duration="6696000" />
-      <workItem from="1613342523935" duration="1526000" />
+      <workItem from="1613342523935" duration="2632000" />
     </task>
     <servers />
   </component>
@@ -222,14 +223,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser" timestamp="1612371607015">
+    <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser" timestamp="1613345779706">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
-    <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser/0.25.1280.723@0.25.1280.723" timestamp="1612371607015" />
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613176548583">
+    <state x="421" y="66" key="#com.intellij.ide.util.MemberChooser/0.25.1280.723@0.25.1280.723" timestamp="1613345779706" />
+    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613345977087">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
-    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.723@0.25.1280.723" timestamp="1613176548583" />
+    <state x="378" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.723@0.25.1280.723" timestamp="1613345977087" />
     <state x="345" y="102" key="NewPhpClassDialog" timestamp="1612793260117">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
