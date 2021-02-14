@@ -98,7 +98,16 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container">
+                <div class="mx-auto">
+                    @if(session('message'))
+                        <div class="alert alert-{{ session('alert_type') }}">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+                </div>
+                @yield('content')
+            </div>
         </main>
     </div>
 </body>

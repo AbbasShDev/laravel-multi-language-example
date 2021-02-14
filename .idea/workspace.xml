@@ -23,15 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d3aa95-b29c-4555-aef9-0bdc44dfab87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ca/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ca/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ca/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ca/posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/ar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -176,9 +177,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/posts" />
       <recent name="$PROJECT_DIR$/resources/lang/ar" />
       <recent name="$PROJECT_DIR$/resources/lang/ca" />
-      <recent name="$PROJECT_DIR$/resources/views/posts" />
     </key>
   </component>
   <component name="RunManager">
@@ -203,7 +204,7 @@
       <workItem from="1612802588685" duration="4881000" />
       <workItem from="1612990126582" duration="1446000" />
       <workItem from="1613174575144" duration="7462000" />
-      <workItem from="1613252730840" duration="4100000" />
+      <workItem from="1613252730840" duration="6566000" />
     </task>
     <servers />
   </component>

@@ -17,16 +17,16 @@ class PostController extends Controller {
 
     public function create()
     {
-        return  view('posts.create');
+        return view('posts.create');
     }
 
     public function store(Request $request)
     {
         $attrRoles = [];
 
-        foreach (config('locales.languages') as $key => $val){
-            $attrRoles['title.'.$key] = 'required';
-            $attrRoles['body.'.$key] = 'required';
+        foreach (config('locales.languages') as $key => $val) {
+            $attrRoles['title.' . $key] = 'required';
+            $attrRoles['body.' . $key] = 'required';
         }
 
 
@@ -37,7 +37,17 @@ class PostController extends Controller {
 
         $post = Post::create($data);
 
-        return redirect()->to(route('posts.show', $post));
+        if ($post) {
+            return redirect()->to(route('posts.show', $post))->with([
+                'message'    => __('posts.post_created_successfully'),
+                'alert_type' => 'success',
+            ]);
+        }
+
+        return redirect()->to(route('posts.index'))->with([
+            'message'    => __('posts.something_went_wrong'),
+            'alert_type' => 'danger',
+        ]);
 
     }
 
@@ -49,37 +59,59 @@ class PostController extends Controller {
         return view('posts.show', compact('post'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\Post $post
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Post $post)
+    public function edit($post)
     {
-        //
+        $post = Post::where('slug->' . app()->getLocale(), $post)->first();
+
+        return view('posts.edit', compact('post'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Post $post
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $post)
     {
-        //
+        $attrRoles = [];
+
+        foreach (config('locales.languages') as $key => $val) {
+            $attrRoles['title.' . $key] = 'required';
+            $attrRoles['body.' . $key] = 'required';
+        }
+
+
+        $attributes = $request->validate($attrRoles);
+
+        $data['title'] = $request->title;
+        $data['body'] = $request->body;
+
+        $post = Post::where('slug->' . app()->getLocale(), $post)->first();
+
+        $updated = $post->update($data);
+
+        if ($updated){
+            return redirect()->to(route('posts.show', $post))->with([
+                'message'    => __('posts.post_updated_successfully'),
+                'alert_type' => 'success',
+            ]);
+        }
+
+        return redirect()->to(route('posts.show', $post))->with([
+            'message'    => __('posts.something_went_wrong'),
+            'alert_type' => 'danger',
+        ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param \App\Models\Post $post
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Post $post)
+    public function destroy($post)
     {
-        //
+        $deleted = $post = Post::where('slug->' . app()->getLocale(), $post)->first()->delete();
+
+        if ($deleted){
+            return redirect()->to(route('posts.index'))->with([
+                'message'    => __('posts.post_deleted_successfully'),
+                'alert_type' => 'danger',
+            ]);
+        }
+
+        return redirect()->to(route('posts.index'))->with([
+            'message'    => __('posts.something_went_wrong'),
+            'alert_type' => 'danger',
+        ]);
     }
 }
