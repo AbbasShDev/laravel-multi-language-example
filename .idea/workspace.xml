@@ -23,16 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d3aa95-b29c-4555-aef9-0bdc44dfab87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ca/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ca/posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +201,8 @@
       <workItem from="1612802588685" duration="4881000" />
       <workItem from="1612990126582" duration="1446000" />
       <workItem from="1613174575144" duration="7462000" />
-      <workItem from="1613252730840" duration="6566000" />
+      <workItem from="1613252730840" duration="6696000" />
+      <workItem from="1613342523935" duration="1526000" />
     </task>
     <servers />
   </component>
@@ -248,10 +246,10 @@
       <screen x="0" y="25" width="1280" height="723" />
     </state>
     <state width="534" height="445" key="SwitcherDM/0.25.1280.723@0.25.1280.723" timestamp="1613254820494" />
-    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1613256437855">
+    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1613344188995">
       <screen x="0" y="25" width="1280" height="723" />
     </state>
-    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.25.1280.723@0.25.1280.723" timestamp="1613256437855" />
+    <state x="305" y="72" width="670" height="676" key="search.everywhere.popup/0.25.1280.723@0.25.1280.723" timestamp="1613344188995" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

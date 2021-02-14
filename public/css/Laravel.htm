@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="http://multi-lang-blog.test/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Styles -->
+            <link href="http://multi-lang-blog.test/css/app.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="http://multi-lang-blog.test">
+                    Laravel
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Authentication Links -->
+                                                                                    <li class="nav-item">
+                                    <a class="nav-link" href="http://multi-lang-blog.test/login">Login</a>
+                                </li>
+                            
+                                                            <li class="nav-item">
+                                    <a class="nav-link" href="http://multi-lang-blog.test/register">Register</a>
+                                </li>
+                                                    
+                        <!-- Change lang -->
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                English <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                                    <a href="http://multi-lang-blog.test/change-language/en" class="dropdown-item">English</a>
+                                                                    <a href="http://multi-lang-blog.test/change-language/ar" class="dropdown-item">Arabic</a>
+                                                                    <a href="http://multi-lang-blog.test/change-language/ca" class="dropdown-item">Spanish</a>
+                                                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            <div class="container">
+                <div class="mx-auto">
+                                    </div>
+                    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header border-bottom-0 ">Posts</div>
+
+
+                <div class="table-responsive">
+                    <table class="table table-bordered order-left-0 border-right-0 m-0">
+                        <thead class="">
+                        <tr>
+                            <th colspan="3">
+                                <form action="http://multi-lang-blog.test/posts" method="get">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="s" placeholder="Enter search keyword" value="&lt;script&gt;alert(&quot;Hello! I am an alert box!&quot;);&lt;/script&gt;">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-info" type="submit" id="button-addon2">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="border-bottom-0" style="width: 64px !important;">ID</th>
+                            <th class="border-bottom-0">Title</th>
+                            <th class="border-bottom-0 text-center" style="width: 70px !important;">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td class="text-center">17</td>
+                                <td><a href="http://multi-lang-blog.test/posts/this-is-english-title3">This is English title3</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/this-is-english-title3/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-17').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/this-is-english-title3" method="POST"
+                                          id="delete-post-17" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">14</td>
+                                <td><a href="http://multi-lang-blog.test/posts/define-success-on-your-own-terms-achieve-it-by-your-own-rules-and-build-a-life-you-re-proud-to-live">Define success on your own terms, achieve it by your own rules, and build a life you’re proud to live.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/define-success-on-your-own-terms-achieve-it-by-your-own-rules-and-build-a-life-you-re-proud-to-live/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-14').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/define-success-on-your-own-terms-achieve-it-by-your-own-rules-and-build-a-life-you-re-proud-to-live" method="POST"
+                                          id="delete-post-14" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">13</td>
+                                <td><a href="http://multi-lang-blog.test/posts/never-give-up-today-is-hard-tomorrow-will-be-worse-but-the-day-after-tomorrow-will-be-sunshine">Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/never-give-up-today-is-hard-tomorrow-will-be-worse-but-the-day-after-tomorrow-will-be-sunshine/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-13').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/never-give-up-today-is-hard-tomorrow-will-be-worse-but-the-day-after-tomorrow-will-be-sunshine" method="POST"
+                                          id="delete-post-13" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">12</td>
+                                <td><a href="http://multi-lang-blog.test/posts/your-time-is-limited-so-don-t-waste-it-living-someone-else-s-life">Your time is limited, so don’t waste it living someone else’s life.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/your-time-is-limited-so-don-t-waste-it-living-someone-else-s-life/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-12').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/your-time-is-limited-so-don-t-waste-it-living-someone-else-s-life" method="POST"
+                                          id="delete-post-12" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">11</td>
+                                <td><a href="http://multi-lang-blog.test/posts/you-shouldn-t-blindly-accept-a-leader-s-advice-you-ve-got-to-question-leaders-on-occasion">You shouldn’t blindly accept a leader’s advice. You’ve got to question leaders on occasion.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/you-shouldn-t-blindly-accept-a-leader-s-advice-you-ve-got-to-question-leaders-on-occasion/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-11').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/you-shouldn-t-blindly-accept-a-leader-s-advice-you-ve-got-to-question-leaders-on-occasion" method="POST"
+                                          id="delete-post-11" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">10</td>
+                                <td><a href="http://multi-lang-blog.test/posts/sweating-the-details-is-more-important-than-anything-else">Sweating the details is more important than anything else.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/sweating-the-details-is-more-important-than-anything-else/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-10').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/sweating-the-details-is-more-important-than-anything-else" method="POST"
+                                          id="delete-post-10" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">9</td>
+                                <td><a href="http://multi-lang-blog.test/posts/surround-yourself-with-only-people-who-are-going-to-lift-you-higher">Surround yourself with only people who are going to lift you higher.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/surround-yourself-with-only-people-who-are-going-to-lift-you-higher/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-9').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/surround-yourself-with-only-people-who-are-going-to-lift-you-higher" method="POST"
+                                          id="delete-post-9" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">8</td>
+                                <td><a href="http://multi-lang-blog.test/posts/one-does-not-discover-new-lands-without-consenting-to-lose-sight-of-the-shore-for-a-very-long-time">One does not discover new lands without consenting to lose sight of the shore for a very long time.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/one-does-not-discover-new-lands-without-consenting-to-lose-sight-of-the-shore-for-a-very-long-time/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-8').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/one-does-not-discover-new-lands-without-consenting-to-lose-sight-of-the-shore-for-a-very-long-time" method="POST"
+                                          id="delete-post-8" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">7</td>
+                                <td><a href="http://multi-lang-blog.test/posts/fearlessness-is-like-a-muscle-i-know-from-my-own-life-that-the-more-i-exercise-it-the-more-natural-it-becomes-to-not-let-my-fears-run-me">Fearlessness is like a muscle. I know from my own life that the more I exercise it, the more natural it becomes to not let my fears run me.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/fearlessness-is-like-a-muscle-i-know-from-my-own-life-that-the-more-i-exercise-it-the-more-natural-it-becomes-to-not-let-my-fears-run-me/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-7').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/fearlessness-is-like-a-muscle-i-know-from-my-own-life-that-the-more-i-exercise-it-the-more-natural-it-becomes-to-not-let-my-fears-run-me" method="POST"
+                                          id="delete-post-7" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">6</td>
+                                <td><a href="http://multi-lang-blog.test/posts/don-t-be-intimidated-by-what-you-don-t-know-that-can-be-your-greatest-strength-and-ensure-that-you-do-things-differently-from-everyone-else">Don’t be intimidated by what you don’t know. That can be your greatest strength and ensure that you do things differently from everyone else.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/don-t-be-intimidated-by-what-you-don-t-know-that-can-be-your-greatest-strength-and-ensure-that-you-do-things-differently-from-everyone-else/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-6').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/don-t-be-intimidated-by-what-you-don-t-know-that-can-be-your-greatest-strength-and-ensure-that-you-do-things-differently-from-everyone-else" method="POST"
+                                          id="delete-post-6" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">5</td>
+                                <td><a href="http://multi-lang-blog.test/posts/nothing-will-work-unless-you-do">Nothing will work unless you do.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/nothing-will-work-unless-you-do/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-5').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/nothing-will-work-unless-you-do" method="POST"
+                                          id="delete-post-5" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">4</td>
+                                <td><a href="http://multi-lang-blog.test/posts/what-would-you-do-if-you-were-not-afraid">What would you do if you were not afraid?</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/what-would-you-do-if-you-were-not-afraid/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-4').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/what-would-you-do-if-you-were-not-afraid" method="POST"
+                                          id="delete-post-4" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">3</td>
+                                <td><a href="http://multi-lang-blog.test/posts/the-most-courageous-act-is-still-to-think-for-yourself-aloud">The most courageous act is still to think for yourself. Aloud.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/the-most-courageous-act-is-still-to-think-for-yourself-aloud/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-3').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/the-most-courageous-act-is-still-to-think-for-yourself-aloud" method="POST"
+                                          id="delete-post-3" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">2</td>
+                                <td><a href="http://multi-lang-blog.test/posts/always-deliver-more-than-expected">Always deliver more than expected.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/always-deliver-more-than-expected/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-2').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/always-deliver-more-than-expected" method="POST"
+                                          id="delete-post-2" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td class="text-center">1</td>
+                                <td><a href="http://multi-lang-blog.test/posts/it-s-not-about-ideas-it-s-about-making-ideas-happen">It’s not about ideas. It’s about making ideas happen.</a></td>
+                                <td class="text-center">
+                                    <a href="http://multi-lang-blog.test/posts/it-s-not-about-ideas-it-s-about-making-ideas-happen/edit"><i
+                                            class="fa fa-edit fa-fw text-info"></i></a>
+                                    <a
+                                        href="javascript:void(0)"
+                                        onclick="if (confirm('Are you sure?')){ document.getElementById('delete-post-1').submit() }"
+                                    >
+                                        <i class="fa fa-trash fa-fw text-danger"></i>
+                                    </a>
+
+                                    <form action="http://multi-lang-blog.test/posts/it-s-not-about-ideas-it-s-about-making-ideas-happen" method="POST"
+                                          id="delete-post-1" style="display: none !important;">
+                                        <input type="hidden" name="_token" value="qOeSqjs8zMpUC3k9lgwW6rV6QSAW4Sh0VLAftCMv">                                        <input type="hidden" name="_method" value="DELETE">                                    </form>
+                                </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

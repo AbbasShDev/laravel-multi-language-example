@@ -20,5 +20,7 @@ return [
     'post_deleted_successfully' => 'publicación eliminada con éxito',
     'post_created_successfully' => 'publicación creada con éxito',
     'something_went_wrong'      => 'algo salió mal',
+    'enter_search_keyword'      => 'Ingrese la palabra clave de búsqueda',
+    'search'                    => 'Buscar',
 
 ];

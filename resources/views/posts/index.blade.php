@@ -11,10 +11,21 @@
                     <table class="table table-bordered order-left-0 border-right-0 m-0">
                         <thead class="">
                         <tr>
-                            <th class="border-bottom-0">{{ __('posts.id') }}</th>
+                            <th colspan="3">
+                                <form action="{{ route('posts.index') }}" method="get">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="s" placeholder="{{ __('posts.enter_search_keyword') }}" value="{{ old('s', request()->input('s')) }}">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-info" type="submit" id="button-addon2">{{ __('posts.search') }}</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="border-bottom-0" style="width: 64px !important;">{{ __('posts.id') }}</th>
                             <th class="border-bottom-0">{{__('posts.title')}}</th>
-                            <th class="border-bottom-0 text-center"
-                                style="width: 70px !important;">{{__('posts.actions')}}</th>
+                            <th class="border-bottom-0 text-center" style="width: 70px !important;">{{__('posts.actions')}}</th>
                         </tr>
                         </thead>
                         <tbody>

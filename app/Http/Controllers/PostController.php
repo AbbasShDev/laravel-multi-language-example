@@ -8,9 +8,17 @@ use Illuminate\Support\Facades\Route;
 
 class PostController extends Controller {
 
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::orderBy('id', 'DESC')->get();
+        $posts = Post::orderBy('id', 'DESC');
+
+        $search = isset($request->s) && !empty($request->s) ? $request->s : null;
+
+        if (!is_null($search)){
+            $posts = $posts->search($search, null, true);
+        }
+
+        $posts = $posts->get();
 
         return view('posts.index', compact('posts'));
     }

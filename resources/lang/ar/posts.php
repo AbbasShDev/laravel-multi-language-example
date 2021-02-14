@@ -20,5 +20,7 @@ return [
     'post_deleted_successfully' => 'تم خذف المقال',
     'post_created_successfully' => 'تم إضافة المقال',
     'something_went_wrong'      => 'حدث خطأ ما',
+    'enter_search_keyword'      => 'أدخل كلمة البحث',
+    'search'                    => 'بحث',
 
 ];
